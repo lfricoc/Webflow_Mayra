@@ -211,6 +211,7 @@ disableScroll();
 });
 disableScroll();
 //###########################################################################################################--------Recuerdos
+console.log("Esto es una prueba");
 var scl = 2.5;
 var advance = [10,25,70,100];
 var c = 0;
