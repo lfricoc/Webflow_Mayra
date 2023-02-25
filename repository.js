@@ -1,7 +1,3 @@
-//Java_Script Repo:
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
-
-<script>
 //###########################################################################################################---------TextScroll
 const texte = document.querySelector("#texte");
 const textContent = texte.innerText;
@@ -293,4 +289,3 @@ for (let i=0; i < carpetas.length; i++){
     ,false
   );
 }
-</script>
