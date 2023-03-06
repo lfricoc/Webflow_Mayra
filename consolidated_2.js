@@ -40,7 +40,7 @@ for (let i = 0; i < 30; i++) {
 var cuadrados = document.getElementsByClassName('cuadrados');
 function mouseEnter(a, c) {
   a.style.backgroundColor = "black";
-  bird.style.backgroundImage = "url(https://uploads-ssl.webflow.com/63e4d17708608b664a62f809/63f4b765e4e5330c3dab2ea4_pajaros_30.jpg)";
+  bird.style.backgroundImage = url(img/pajaros_" + c + ".jpg)";
   bird.style.backgroundSize = "cover";
 }
 function mouseLeave(b, d) {
