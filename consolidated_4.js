@@ -155,7 +155,7 @@ var cuadrados = document.getElementsByClassName('cuadrados');
 
 function mouseEnter(a, c) {
   a.style.backgroundColor = "black";
-  bird.style.backgroundImage = "url(img/pajaros_ " + c + ".jpg)";
+  bird.style.backgroundImage = "url('img/pajaros_5.jpg')";
   bird.style.backgroundSize = "cover";
 }
 
