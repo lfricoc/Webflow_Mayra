@@ -659,7 +659,30 @@ var elementTransfer = document.getElementById('transferAudio');
 const videoIntro = document.querySelector('.video');
 var scrollDown = document.getElementById('scroll_down');
 scrollDown.style.display = "none"; //Dont show scroll bar
-var refHeight = window.innerHeight;
+
+//-------------------------------------check if device is mobile
+function detectMob() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+    ];   
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}
+var mobile_dev = detectMob();
+var refHeight;
+if (mobile_dev == true){
+	refHeight = window.innerHeight*0.551916;
+}
+else{
+	refHeight = window.innerHeight;
+}
 var refWidth = window.innerWidth;
 
 var elementHello = document.getElementById('audioHello');
